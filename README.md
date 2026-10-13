@@ -1,88 +1,66 @@
-Chess Game in Java
+# Chess Game
 
-This is a simple chess game that I worked on during my first year of studying informatics. I gradually modified the project and added new features.
+A chess game developed in Java as a first-year informatics project and later extended with additional features.
 
-The game is designed for two players playing on the same computer. It has a graphical interface, so players can select pieces and move them using the mouse.
+The game allows two players to play chess on the same computer through a graphical user interface.
 
-Features
+## Features
 
-Chessboard with the standard starting positions.
+- Graphical chessboard with selectable pieces
+- Legal piece movements
+- Alternating turns for white and black
+- Check, checkmate and stalemate detection
+- Castling
+- En passant capture
+- Pawn promotion
+- 10-minute timer for each player
+- Game-over notification
+- Option to start a new game
 
-Movement of chess pieces according to their rules.
+## Technologies
 
-Turns alternate between the white and black players.
+- Java
+- Java Swing
+- Java AWT
 
-Check, checkmate and stalemate detection.
+## Getting Started
 
-Castling.
+### Requirements
 
-En passant capture.
+- Java Development Kit (JDK)
+- A Java IDE or terminal
 
-Pawn promotion to another piece.
+### Running the Application
 
-A 10-minute time limit for each player.
+1. Clone or download the repository.
+2. Open the project in your preferred Java IDE.
+3. Make sure the chess piece images are available in the required `images` directory.
+4. Run the `SachovaHra.java` file.
 
-A message showing the result when the game ends.
+Alternatively, if all Java source files are in the same directory, compile and run the application from the terminal:
 
-Option to start a new game.
-
-Piece images and highlighting of the selected square.
-
-Technologies Used
-
-Java
-
-Java Swing – graphical user interface.
-
-AWT – working with the window, colors and mouse events.
-
-How to Run
-
-Download or clone the project from GitHub.
-
-Open the project in an IDE, such as IntelliJ IDEA or Eclipse.
-
-Make sure the chess piece images are stored in the images folder.
-
-Run SachovaHra.java.
-
-You can also run the game from the command line if all Java files are in the same folder:
-
+```bash
 javac *.java
 java SachovaHra
+```
 
-How to Play
+## Project Structure
 
-Click on one of your chess pieces.
+The project is organized into classes responsible for the graphical interface, chessboard, individual pieces and game logic.
 
-Click on the square where you want to move it.
+- `SachovaHra.java` – graphical interface and game controls
+- `Sachovnica.java` – chessboard and movement logic
+- `Figurka.java` – base class for chess pieces
+- `Kral.java` – king
+- `Dama.java` – queen
+- `Veza.java` – rook
+- `Strelec.java` – bishop
+- `Jazdec.java` – knight
+- `Pesec.java` – pawn
+- `Farba.java` – piece colors
+- `Tah.java` – move representation
+- `TypFigurky.java` – chess piece types
 
-After a valid move, the other player takes their turn.
+## Purpose
 
-The game ends when there is checkmate, stalemate or a player's time runs out.
-
-Project Structure
-
-SachovaHra.java – graphical interface, game controls and timer.
-
-Sachovnica.java – chessboard, piece positions and checking valid moves.
-
-Figurka.java – common base class for all chess pieces.
-
-Kral.java – king movement and castling.
-
-Dama.java – queen movement.
-
-Veza.java – rook movement.
-
-Strelec.java – bishop movement.
-
-Jazdec.java – knight movement.
-
-Pesec.java – pawn movement and special rules.
-
-Farba.java – piece colors.
-
-Tah.java – stores information about a move.
-
-TypFigurky.java – chess piece types.
+The project was created to practise object-oriented programming in Java, working with classes and methods, and developing a graphical desktop application. It was later modified to add more chess rules and improve the overall gameplay experience.
