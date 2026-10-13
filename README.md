@@ -61,6 +61,3 @@ The project is organized into classes responsible for the graphical interface, c
 - `Tah.java` – move representation
 - `TypFigurky.java` – chess piece types
 
-## Purpose
-
-The project was created to practise object-oriented programming in Java, working with classes and methods, and developing a graphical desktop application. It was later modified to add more chess rules and improve the overall gameplay experience.
